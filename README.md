@@ -18,9 +18,13 @@ docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 --restart=unless-stopp
 2. Exchange : Producer 로 부터 전달받은 메세지를 어떤 Queue로 보낼지 결정하는 곳 입니다. Queue와 Exchange 사이 Routing Key가 존재 해야 합니다.
 3. Queue : Consumer 가 메세지를 소비하기 전까지 메세지를 보관하는 장소 입니다.
 4. Binding : Exchange 와 Queue의 관계를 정의합니다. 총 4개의 전략이 있습니다.
+
    Direct Exchange : 메세지의 Routing Key와 일치하는 Binding 된 Queue 로 Routing 합니다.
+   
    Fanout Exchange : Binding 된 모든 Queue에게 메세지를 Routing 합니다.
+   
    Topic Exchange : 특정 Routing 패턴이 일치하는 Queue로 Routing 합니다.
+   
    Headers Exchange : Key-Value방식으로 정의된 Header 속성을 통해 Routing 합니다.
 
 
