@@ -13,9 +13,11 @@ Producer 역할을 하는 코드 입니다.
 docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 --restart=unless-stopped rabbitmq:management
 3. Postman을 실행하여 API 요청 작업을 진행합니다.
 
-- http://localhost:8080/send/message
-- method : POST
-- Body : { "title" : "message send", "content" : "message queue test"
+  - http://localhost:8080/send/message
+
+  - method : POST
+
+  - Body : { "title" : "message send", "content" : "message queue test"
 
 ### 🌈 구성 요소
 ---
