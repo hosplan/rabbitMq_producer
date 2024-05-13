@@ -10,6 +10,7 @@ Producer 역할을 하는 코드 입니다.
 
 1. rabbitMq_consumer 코드를 받아주세요.
 2. 도커 컨테이너를 해당 이미지를 받으시고 실행시켜야 됩니다. 도커가 없으시면 도커를 설치해주세요.
+
 docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 --restart=unless-stopped rabbitmq:management
 3. Postman을 실행하여 API 요청 작업을 진행합니다.
 
